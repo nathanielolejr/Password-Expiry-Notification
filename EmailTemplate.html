@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Expiry Alert</title>
+  <style>
+    body {
+      font-family: 'Verdana', sans-serif;
+      background-color: #A3D1C6;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table {
+      border-spacing: 0;
+      width: 100%;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #FBFFE4;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      background-color: #3D8D7A;
+      color: #FBFFE4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    .content {
+      padding: 20px 40px;
+      text-align: center;
+      color: #333333;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      margin: 20px 0 10px;
+      color: #333333;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .footer {
+      background-color: #3D8D7A;
+      color: #FBFFE4;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <table role="presentation" class="container">
+    <tr>
+      <td>
+        <!-- Header -->
+        <table role="presentation" width="100%" class="header">
+          <tr>
+            <td>
+              <h1>Password Expiry Reminder</h1>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Content -->
+        <table role="presentation" width="100%" class="content">
+          <tr>
+            <td>
+              <h2>Hello <?= recipientName ?></h2><br>
+              <p>
+                This is a crucial reminder that your Active Directory account password for username
+                (<strong><?= username ?></strong>) will expire on <strong><?= expiryDate ?></strong>.
+                <br><br>
+                To maintain seamless access and prevent any disruptions, please update your password as soon as possible.
+                <br><br>
+                You may follow this <a href="YOUR_GUIDE_LINK_HERE">guide</a>.
+              </p><br>
+              <p>
+                If you have any questions or need assistance with updating your password, please contact our IT Support
+                team at <a href="YOUR_SUPPORT_EMAIL_HERE">YOUR_SUPPORT_EMAIL_HERE</a>.
+              </p>
+              <p>Thank you for your prompt attention to this matter.</p>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Footer -->
+        <table role="presentation" width="100%" class="footer">
+          <tr>
+            <td>
+              <p>Best regards,<br>
+                Service Desk | IT Security | YOUR_COMPANY_NAME
+              </p>
+              <p><em>This is a system-generated email. Please do not reply.</em></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
