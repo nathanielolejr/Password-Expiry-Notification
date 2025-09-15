@@ -3,7 +3,7 @@
 ## Overview
 A Google Apps Script project that sends automated password expiry reminders via email. It leverages **Google Sheets** as the data source and an **HTML email template** for personalized, professional notifications.
 
-https://github.com/nathanielolejr/Password-Expiry-Notification/blob/main/password%20notification.png
+![Password Expiry Notification Preview](https://github.com/nathanielolejr/Password-Expiry-Notification/blob/main/password%20notification.png?raw=true)
 
 ## Features
 - Pulls recipient details (name, username, expiry date) from Google Sheets.  
